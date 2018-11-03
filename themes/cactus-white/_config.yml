@@ -1,8 +1,9 @@
 nav:
-  Home: http://glatchdesign.com
-  Tech: /
-  About: http://glatchdesign.com/about
-  Projects: http://github.com/suginoki45
+  Home: https://glatchdesign.com
+  About: https://glatchdesign.com/about
+  Works: https://glatchdesign.com/works
+  Blog: https://glatchdesign.com/blog
+  Contact: https://glatchdesign.com/contact
 
 projects_url: http://github.com/sergodeeva
 
@@ -27,8 +28,8 @@ customize:
         url: /images/apple-touch-icon.png
         gravator: false
     social_links:
-        github: http://github.com/suginoki45
-        twitter: https://twitter.com/suginoki45
+        # github:
+        # twitter:
     show_all_posts: false
     post_count: 10
     highlight: pojoaque
