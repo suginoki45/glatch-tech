@@ -65,6 +65,7 @@ Travis CIからリポジトリにpushを行うにあたってアクセストー�
 
 ```
 language: php
+
 php:
   - '7'
 
