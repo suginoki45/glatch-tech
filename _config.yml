@@ -4,7 +4,7 @@
 
 # Site
 title: Glatch Tech
-subtitle:
+subtitle: フリーランスWeb制作ユニットGlatchのテックブログです。
 description:
 keywords:
 author: Glatch
@@ -13,7 +13,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://glatch-tech.netlify.com
+url: https://tech.glatchdesign.com
 root: /
 permalink: :title/
 permalink_defaults:
