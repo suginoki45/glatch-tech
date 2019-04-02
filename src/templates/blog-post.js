@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 
-
 export default function BlogTemplate({
   data, // this prop will be injected by the GraphQL query below.
 }) {
