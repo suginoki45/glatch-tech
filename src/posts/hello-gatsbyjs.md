@@ -7,15 +7,15 @@ title: HexoからGatsbyに移行した
 当ブログはHexo製のブログをNetlifyにホスティングする形で運用していたが、最近Gatsby熱が個人的に高まっており、当ブログもHexoからGatsbyに乗り換えたのでメモ。
 
 ## Gastbyのインストール
-まずはGastbyをコマンドラインから使用できるgatsby-cliをインストール。
+まずはGastbyをコマンドラインから使用できる`gatsby-cli`をインストール。
 
 ```
 npm i -g gatsby-cli
 ```
 
 ## ブログを作る
-gatsby-cliがインストールできたら、gatsby newというコマンドでブログを生成。
-gatsby newの後に続く文字列は任意の名前で好きに付けて構わない。ブログ名などにしておくと分かりやすい。
+gatsby-cliがインストールできたら、`gatsby new`というコマンドでブログを生成。
+`gatsby new`の後に続く文字列は任意の名前で好きに付けて構わない。ブログ名などにしておくと分かりやすい。ここでは`my-blog`として進める。
 
 ```
 gatsby new my-blog
@@ -37,8 +37,10 @@ gatsby develop
 
 http://localhost:8000/
 
+以上でブログが完成した。
+
 ## ブログ名を変更する
-デフォルトだと「Gatsby Starter Default」という名前になっていると思う。これを任意の名前に変更する。
+デフォルトだと「Gatsby Starter Default」という名前になっている。これを任意の名前に変更する。
 ディレクトリ直下にある`gatsby-config.js`を編集する。
 `siteMetadata`の`title`を変更すればブログ名が変わる。あわせて`description`と`author`も自分のブログに合わせて変更。
 
@@ -67,3 +69,6 @@ Hexoではマークダウンで記事を書いていたので、今回はその�
 
 ## ここまで
 以上でGatsbyでマークダウンの記事を表示させるところまでできた。
+
+## ハマったところ
+NetlifyのBuild settingsのところでBuild commandを`hexo generate`のままにしてしまっており、何度かビルドに失敗した。`gatsby build`とすることで解決。
