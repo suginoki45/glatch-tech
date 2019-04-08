@@ -1,0 +1,28 @@
+.post {
+  border-top: 1px solid #e5e5e5;
+}
+.post:last-child {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.post a {
+  display: block;
+  padding: 24px;
+  color: #333;
+  text-decoration: none;
+  line-height: 1.25;
+}
+
+.post a:hover {
+  background-color: #e5e5e5;
+}
+
+.post__title {
+  margin-bottom: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.post__date {
+  font-size: 0.75rem;
+}
