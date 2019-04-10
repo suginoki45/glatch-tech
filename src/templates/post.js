@@ -1,8 +1,26 @@
 import React from "react"
 import { graphql } from "gatsby"
+import styled from 'styled-components'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+
+const PostContainer = styled.div`
+
+`
+
+const PostTitle = styled.h1`
+  margin-bottom: 0;
+  font-size: 1.75rem;
+`
+
+const PostDate = styled.time`
+  font-size: 0.75rem;
+`
+
+const PostContent = styled.div`
+  margin-top: 2rem;
+`
 
 export default function BlogTemplate({
   data, // this prop will be injected by the GraphQL query below.
@@ -12,16 +30,15 @@ export default function BlogTemplate({
   return (
     <Layout>
       <SEO title={frontmatter.title} />
-      <div className="blog-post-container">
-        <div className="blog-post">
-          <h1>{frontmatter.title}</h1>
-          <h2>{frontmatter.date}</h2>
-          <div
-            className="blog-post-content"
+      <PostContainer>
+        <article>
+          <PostDate>{frontmatter.date}</PostDate>
+          <PostTitle>{frontmatter.title}</PostTitle>
+          <PostContent
             dangerouslySetInnerHTML={{ __html: html }}
           />
-        </div>
-      </div>
+        </article>
+      </PostContainer>
     </Layout>
   )
 }
@@ -31,7 +48,7 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "YYYY年MM月DD日")
         path
         title
       }
