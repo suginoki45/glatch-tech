@@ -15,6 +15,12 @@ const typography = new Typography({
     "メイリオ",
     "sans-serif",
   ],
+  overrideStyles: () => ({
+    h2: {
+      fontSize: '1.5rem',
+      lineHeight: 1.3
+    }
+  })
 })
 
 export default typography
