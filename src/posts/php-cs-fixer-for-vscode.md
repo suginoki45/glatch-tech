@@ -22,7 +22,7 @@ Visual Studio CodeでPHPの整形をしたかったので、PHP CS Fixerを使�
 
 ダウンロードしたら任意の場所に保存します。今回は下記の場所に保存しました。
 
-```
+```json
 ~/.vscode/php-cs-fixer-v2.phar
 ```
 
@@ -30,7 +30,7 @@ Visual Studio CodeでPHPの整形をしたかったので、PHP CS Fixerを使�
 
 `cmd + ,`　でユーザー設定ファイルを開き以下を追記します。
 
-```
+```json
   "php-cs-fixer.executablePath": "~/.vscode/php-cs-fixer-v2.phar",
   "php-cs-fixer.rules": "@PSR2",
   "php-cs-fixer.formatHtml": true,

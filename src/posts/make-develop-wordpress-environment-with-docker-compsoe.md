@@ -39,7 +39,7 @@ WordPressを開発する時、開発環境を何で作っていますか？
 
 このウインドウの画面から先ほど登録したアカウント情報を入力してログインします。これでDockerの準備は完了です。DockerをインストールすればDocker Composeも使えるようになります。試しに下記のコマンドを実行してみてください。
 
-```
+```shell
 $ docker-compose -v
 docker-compose version 1.22.0, build f46880f
 ```
@@ -52,7 +52,7 @@ docker-composeで構築するWordPressを格納するディレクトリを作成
 ## WordPressとMySQLの環境を構築
 ディレクトリを作成したら次に`docker-compose.yml`というファイルを作成します。このファイルの中にコンテナ情報を記述していき、環境を構築します。
 
-```
+```yml
 version: "2"
 services:
     db:
@@ -86,7 +86,7 @@ volumes:
 ## Docker Composeを実行
 `docker-compose.yml`の作成が終了したらDocker Composeを実行してみます。
 
-```
+```shell
 $ docker-compose up -d
 ```
 
@@ -95,7 +95,7 @@ $ docker-compose up -d
 ## ホストのテーマ開発ディレクトリをコンテナ内に同期させる
 これがDockerのおすすめポイントなのですが、ホストマシンの任意のディレクトリをコンテナ内のディレクトリとして認識させる機能があります。下記のように`ホストの相対パス:コンテナの絶対パス`の形式で指定すると、ホスト側のテーマディレクトリをコンテナ内にマウントさせることができます。
 
-```
+```yml
 version: "2"
 services:
     db:
@@ -113,7 +113,7 @@ services:
             WORDPRESS_DB_HOST: "db:3306"
         env_file: .env
         volumes:
-          - ./themes/my_theme:/var/www/html/wp-content/themes/my_theme
+            - ./themes/my_theme:/var/www/html/wp-content/themes/my_theme
 volumes:
     db-data:
 ```

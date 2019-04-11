@@ -9,12 +9,11 @@ npmでインストールしたパッケージをアップデートするには�
 ## 結論：npm-check-updatesを使おう
 結論から言うと<a href="https://github.com/tjunnone/npm-check-updates" target="_blank">npm-check-updates</a>というパッケージを使うのが便利でした。まずはnpm-check-updatesをグローバルにインストールします。
 
-```
+```shell
 npm install -g npm-check-updates
 ```
 
 ## npm-check-updatesの基本的な使い方
-
 npm-check-updatesのインストールが完了すると以下の`ncu`コマンドが使用できるようになります。
 `ncu`コマンドを実行すると下記のような感じでアップデートがあるパッケージを教えてくれます。
 
@@ -38,13 +37,13 @@ The following dependencies are satisfied by their declared version range, but th
 
 `ncu`コマンドを叩いただけではアップデートの確認をするだけで、`package.json`もパッケージも更新されていない点に注意。以下のコマンドを叩くと`package.json`が更新されます。
 
-```
+```shell
 ncu -u
 ```
 
 これで`package.json`が更新されます。しかしこの時点でも更新されたのはまだ`package.json`だけで実際のパッケージは更新されていないので、最後に以下のコマンドを叩くことによってパッケージが更新されます。
 
-```
+```shell
 npm update
 ```
 
@@ -56,7 +55,7 @@ npm update
 
 `package.json`の更新は下記のようにパッケージ名を指定して更新することも可能です。
 
-```
+```shell
 ncu -u パッケージ名
 ```
 
@@ -64,7 +63,7 @@ ncu -u パッケージ名
 
 `-u`だとメジャーアップデートがあるパッケージのみ更新されるます。マイナーアップデートも含めたい場合は`-a`を使用します。
 
-```
+```shell
 ncu -a
 ```
 
@@ -72,12 +71,12 @@ ncu -a
 
 `devDependencies`だけ、あるいは`dependencies`だけを更新することが可能です。
 
-```
+```shell
 // devDependenciesだけを更新
 ncu -d
 ```
 
-```
+```shell
 // dependenciesだけ更新
 ncu -p
 ```

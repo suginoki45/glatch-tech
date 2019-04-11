@@ -21,7 +21,7 @@ Prettierがとても便利でもはや手放せないツールとなっていま
 
 これらのパッケージを以下のコマンドを実行してインストールします。
 
-```
+```shell
 npm i -D eslint eslint-config-wordpress stylelint style-lint-config-wordpress
 ```
 
@@ -31,14 +31,14 @@ npm i -D eslint eslint-config-wordpress stylelint style-lint-config-wordpress
 
 
 ### .eslintsrc
-```
+```json
 {
   "extends": "wordpress"
 }
 ```
 
 ### .stylelintsrc
-```
+```json
 {
   "extends": "stylelint-config-wordpress"
 }
@@ -48,7 +48,7 @@ npm i -D eslint eslint-config-wordpress stylelint style-lint-config-wordpress
 
 続いてVS Codeの拡張プラグインの<a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" target="_blank">Prettier</a>をインストールします。
 インストールしたらESLintとstylelintをPrettierで動作するようVS Codeの設定から下記の記述をします。
-```
+```json
 {
   // prettierとぶつかり合うのでデフォルトの整形は無効にする
   "javascript.format.enable": false,
@@ -66,7 +66,7 @@ npm i -D eslint eslint-config-wordpress stylelint style-lint-config-wordpress
 最後にリアルタイムでlintを動かす為に<a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint" target="_blank">ESLint</a>と<a href="https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint" target="_blank">stylelint</a>それぞれのVS Codeの拡張を入れます。
 ESLintについてはファイルの保存時にフォーマットしてくれるよう設定をします。
 
-```
+```json
 {
   "eslint.autoFixOnSave": true
 }

@@ -16,7 +16,7 @@ WordPressのコーディング規約チェックには<a href="https://github.co
 導入にはPHPCSとWordPress Coding Standardsのダウンロードが必要です。ダウンロード方法はいくつかありますが、今回はComposerでダウンロードします。Composerが導入済みの想定で解説しますので、未導入の方はググってもらえれば沢山情報が出てくるので、そちらを参照願います。
 まず`composer.json`をファイルを作成して、下記の通りに記述します。
 
-```
+```json
 {
   "require-dev": {
     "squizlabs/php_codesniffer": "*",
@@ -28,7 +28,7 @@ WordPressのコーディング規約チェックには<a href="https://github.co
 
 次に下記のコマンドをたたくと`composer.json`に記述したパッケージがインストールされます。
 
-```
+```shell
 composer install
 ```
 
@@ -51,7 +51,7 @@ composer install
 
 念のため下記のコマンドをたたいて、PHPCSがインストールされたかを確認してみましょう。
 
-```
+```shell
 phpcs --version
 ```
 
@@ -61,7 +61,7 @@ phpcs --version
 次に`composer.json`にPHPCSを動かすためのコマンドを設定します。直接PHPCSコマンドをたたいても良いのですが、Composerに設定しておくと長いコマンドをたたかなくて良いので便利です。
 先ほどの`composer.json`に下記を追加します。
 
-```
+```json
 "scripts": {
   "test": [
     "./vendor/bin/phpcs --config-set installed_paths `pwd -P`/vendor/wp-coding-standards/wpcs",
@@ -74,14 +74,14 @@ phpcs --version
 
 これで以下のコマンドからPHPCSを動かすことができます。
 
-```
+```shell
 composer test
 ```
 
 ## Travis CI側の設定
 最後にTravis CIにテストのコマンドを書きます。`.travis.yml`に設定を記述します。<a href="/auto-deploy-with-travis-ci/">デプロイ編の記事</a>で紹介した`.travis.yml`に追記しました。
 
-```
+```yml
 language: php
 
 php:
@@ -142,7 +142,7 @@ PHPCBFとはPHP Code Beautifier and Fixerの略で指定したコーディング
 
 PHPCBFも`composer.json`に記述しておいて使用できるようにしておくと楽です。
 
-```
+```json
 "scripts": {
   "phpcbf": [
     "./vendor/bin/phpcbf -p -s -v -n . --standard=./phpcs.xml --extensions=php"

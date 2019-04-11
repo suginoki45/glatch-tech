@@ -11,7 +11,6 @@ import { StaticQuery, graphql } from "gatsby"
 import styled from 'styled-components'
 
 import Header from "./header"
-// import "./layout.css"
 
 const MainWrapper = styled.div`
   margin: 0 auto;

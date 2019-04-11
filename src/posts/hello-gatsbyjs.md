@@ -9,7 +9,7 @@ title: HexoからGatsbyに移行した
 ## Gastbyのインストール
 まずはGastbyをコマンドラインから使用できる`gatsby-cli`をインストール。
 
-```
+```shell
 npm i -g gatsby-cli
 ```
 
@@ -17,19 +17,19 @@ npm i -g gatsby-cli
 gatsby-cliがインストールできたら、`gatsby new`というコマンドでブログを生成。
 `gatsby new`の後に続く文字列は任意の名前で好きに付けて構わない。ブログ名などにしておくと分かりやすい。ここでは`my-blog`として進める。
 
-```
+```shell
 gatsby new my-blog
 ```
 
 ブログが無事生成できたら以下のコマンドでブログを生成したディレクトリ内に移動
 
-```
+```shell
 cd my-blog
 ```
 
 以下のコマンドを実行するとブログが立ち上がる。
 
-```
+```shell
 gatsby develop
 ```
 
@@ -44,7 +44,7 @@ http://localhost:8000/
 ディレクトリ直下にある`gatsby-config.js`を編集する。
 `siteMetadata`の`title`を変更すればブログ名が変わる。あわせて`description`と`author`も自分のブログに合わせて変更。
 
-```
+```javascript
 module.exports = {
   siteMetadata: {
     title: `Glatch Tech`,

@@ -13,13 +13,13 @@ Gatsbyでフォント関連の指定を行うには、公式ドキュメント�
 ## 関連プラグインをインストール
 Typography.jsに加えて`gatsby-plugin-typography`と`react-typography`をインストールする。
 
-```
+```shell
 npm i  -S gatsby-plugin-typography react-typography typography
 ```
 
 インストールが終わったら`gatsby-config.js`の`plugins`に以下の記述を追加する。
 
-```
+```javascript
 plugins: [
   {
     resolve: `gatsby-plugin-typography`,
@@ -36,7 +36,7 @@ plugins: [
 
 先ほど`gatsby-config.js`の`pathToConfigModule`に設定した場所に設定した名前のJSファイルを作成する。
 
-```
+```javascript
 import Typography from "typography"
 
 const typography = new Typography({

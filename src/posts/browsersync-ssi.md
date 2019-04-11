@@ -9,13 +9,15 @@ title: BrowsersyncのrewriteRulesを使用してSSI環境を作る
 
 ## npmパッケージのインストール
 必要なパッケージは下記の3つ。
-```
+
+```shell
 npm i -D browsersync fs path
 ```
 
 ## js側の設定
 ここでは`server.js`という名前でファイルを作成し、下記のような設定をする。
-```
+
+```javascript
 const path = require('path');
 const fs = require('fs');
 const browserSync = require('browser-sync');
@@ -38,6 +40,6 @@ browserSync.init({
 ```
 
 ## 実行
-```
+```shell
 node server.js
 ```

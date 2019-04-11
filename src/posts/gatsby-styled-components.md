@@ -1,5 +1,5 @@
 ---
-path: "/getting-start-styled-components-with-gatsby"
+path: "/gatsby-styled-components"
 date: 2019-04-11
 title: GatsbyにStyled Componentsを導入する
 ---
@@ -10,13 +10,13 @@ CSS in JSを学ぶために数あるライブラリの中からデファクト�
 ## ライブラリの導入
 Styled Componentsを導入するには下記のライブラリを導入する。
 
-```
+```shell
 npm i -S gatsby-plugin-styled-components styled-components babel-plugin-styled-components
 ```
 
 `gatsby-config.js`に下記の設定を追加。
 
-```
+```javascript
 module.exports = {
   plugins: [`gatsby-plugin-styled-components`],
 }
@@ -27,7 +27,7 @@ module.exports = {
 
 ## JSファイルの記述
 
-```
+```javascript
 import React from "react"
 import { graphql } from "gatsby"
 import styled from 'styled-components'
@@ -44,7 +44,7 @@ const MainWrapper = styled.div`
 
 すると`<MainWrapper />`のところは下記のようなhtmlに変換・出力される。
 
-```
+```html
 <div class="layout__MainWrapper-iozUyw cXFUyc">ここにテキストが入ります。</div>
 ```
 

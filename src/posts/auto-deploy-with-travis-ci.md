@@ -21,12 +21,12 @@ title: Travis CIでWordPressテーマのテストとデプロイを自動化で�
 ## ビルドタスクを用意する
 まずはリリース用のファイル群をビルドするタスクを作ります。今回はgulpを使用して用意します。
 
-```
-	const gulp = require('gulp');
-	const runSequence = require('run-sequence');
-	gulp.task('build', ['clean'], callback => {
-		return runSequence(['scss', 'babel', 'img'], callback);
-	});
+```javascript
+const gulp = require('gulp');
+const runSequence = require('run-sequence');
+gulp.task('build', ['clean'], callback => {
+  return runSequence(['scss', 'babel', 'img'], callback);
+});
 ```
 
 各タスクの詳しい内容は本記事の趣旨から外れるので割愛しますが、css、js、imgの各ファイルのビルドタスクを作り実行させています。
@@ -37,11 +37,11 @@ title: Travis CIでWordPressテーマのテストとデプロイを自動化で�
 
 一度ビルドファイルを出力するディレクトリを削除する理由は、不要なファイルが混入してしまわないようにするためです。今回は`clean`タスクという名前にしました。タスクの内容は以下の通り。
 
-```
-	const del = require('del');
-	gulp.task('clean', callback => {
-		return del('dist', callback);
-	});
+```javascript
+const del = require('del');
+gulp.task('clean', callback => {
+  return del('dist', callback);
+});
 ```
 
 ## Travis CIとGithubリポジトリの連携を行う
@@ -63,7 +63,7 @@ Travis CIからリポジトリにpushを行うにあたってアクセストー�
 ## .travis.ymlの設定を行う
 連携が完了したら.travis.ymlというファイルを連携したリポジトリの直下に作ります。ここに設定を記述していきます。コミット時にこの設定ファイルのタスクが実行されるようになります。今回は下記のような感じになります。
 
-```
+```yml
 language: php
 
 php:
@@ -141,7 +141,7 @@ Travis CIの実行に際して必要なものをインストールする設定�
 ### env
 環境変数を設定するキーです。githubのアカウント名とかメールアドレスなんかも設定していますが、必須なものは`secure`です。ここには取得したアクセストークンを設定します。取得したアクセストークンを下記のコマンドで暗号化します。
 
-```
+```yml
 travis encrypt GH_TOKEN=ここに取得したアクセストークンを記述
 ```
 
@@ -149,7 +149,7 @@ travis encrypt GH_TOKEN=ここに取得したアクセストークンを記述
 
 `.travis.yml`内の`deploy`の`script`ところで設定したデプロイ用のスクリプト`deploy.sh`の中身は以下です。
 
-```
+```shell
 #!/usr/bin/env bash
 
 set -e
