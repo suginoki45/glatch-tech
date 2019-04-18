@@ -1,7 +1,8 @@
 ---
 path: "/rbenv-for-mac"
 date: 2018-08-22
-title: 【2018年版】MacでrbenvをインストールしてRubyを管理する
+modified: 2019-04-17
+title: MacでrbenvをインストールしてRubyを管理する
 ---
 
 複数のバージョンの Ruby を切り替えできたり、プロジェクト毎にバージョン指定できる rbenv を導入したのでメモ。
@@ -34,3 +35,14 @@ echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 source ~/.bash_profile
 rbenv --version
 ```
+
+## 新しいgemをインストールしたら
+新しいgemをインストールした際、正常にインストールができたにも関わらず、コマンドをたたくと`command not found｀だと怒られた。
+
+rbenvを導入している場合、`rbenv rehash`コマンドをたたくする必要がある。
+
+```
+rbenv rehash
+```
+
+このコマンドをたたくとインストールしたgemが`~/.rbenv/shims/`以下に配置され無事に使えるようになった。
