@@ -8,12 +8,13 @@ Gatsbyでソースコードを美しく表示してくれるシンタックス�
 
 ## プラグインのインストール
 PrismJSとGatsby用のプラグインのgatsby-remark-prismjsの二つをインストールする。
-```
+
+```javascript
 npm i -S prisms gatsby-remark-prismjs
 ```
 
 ## プラグインの追加
-```
+```javascript
 plugins: [
 	{
       resolve: `gatsby-transformer-remark`,
@@ -32,7 +33,7 @@ plugins: [
 `gatsby-browser.js`にPrismJSのテーマの設定を追加する。
 テーマは[https://prismjs.com/](公式サイト)から好きなものを選べば良い。
 
-```
+```javascript
 require("prismjs/themes/prism-twilight.css")
 ```
 
