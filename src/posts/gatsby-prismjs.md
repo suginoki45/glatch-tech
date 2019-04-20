@@ -9,7 +9,7 @@ Gatsbyでソースコードを美しく表示してくれるシンタックス�
 ## プラグインのインストール
 PrismJSとGatsby用のプラグインのgatsby-remark-prismjsの二つをインストールする。
 
-```javascript
+```shell
 npm i -S prisms gatsby-remark-prismjs
 ```
 
