@@ -14,6 +14,20 @@ const PostTitle = styled.h1`
   font-size: 1.75rem;
 `
 
+const PostDateList = styled.ul`
+  display: flex;
+  margin-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  `
+  
+const PostDateItem = styled.li`
+  margin-bottom: 5px;
+  &:last-child {
+    margin-left: 10px;
+  }
+`
+
 const PostDate = styled.time`
   font-size: 0.75rem;
 `
@@ -32,7 +46,14 @@ export default function BlogTemplate({
       <SEO title={frontmatter.title} />
       <PostContainer>
         <article>
-          <PostDate>{frontmatter.date}</PostDate>
+          <PostDateList>
+            <PostDateItem>
+              <PostDate>{frontmatter.date}</PostDate>
+            </PostDateItem>
+            <PostDateItem>
+              <PostDate>{frontmatter.modified}</PostDate>
+            </PostDateItem>
+          </PostDateList>
           <PostTitle>{frontmatter.title}</PostTitle>
           <PostContent
             dangerouslySetInnerHTML={{ __html: html }}
@@ -48,7 +69,8 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: "YYYY年MM月DD日")
+        date(formatString: "公開日：YYYY年MM月DD日")
+        modified(formatString: "更新日：YYYY年MM月DD日")
         path
         title
       }
