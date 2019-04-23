@@ -86,13 +86,16 @@ export default function BlogTemplate({
             </PostDateItem>
           </PostDateList>
           <PostTitle>{frontmatter.title}</PostTitle>
-          <Tags>
-            {frontmatter.tags.map((tag, i) => (
-              <TagsItem key={i}>
-                <TagsLink to={`/tags/${kebabCase(tag)}/`}>{tag}</TagsLink>
-              </TagsItem>
-            ))}
-          </Tags>
+          {
+            frontmatter.tags &&
+            <Tags>
+              {frontmatter.tags.map((tag, i) => (
+                <TagsItem key={i}>
+                  <TagsLink to={`/tags/${kebabCase(tag)}/`}>{tag}</TagsLink>
+                </TagsItem>
+              ))}
+            </Tags>
+          }
           <PostContent dangerouslySetInnerHTML={{ __html: html }} />
         </article>
       </PostContainer>
