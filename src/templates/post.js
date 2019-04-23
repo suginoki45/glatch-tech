@@ -1,17 +1,48 @@
 import React from "react"
-import { graphql } from "gatsby"
-import styled from 'styled-components'
+
+// Utilities
+import kebabCase from "lodash/kebabCase"
+
+// Components
+import { Link, graphql } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const PostContainer = styled.div`
-
-`
+const PostContainer = styled.div``
 
 const PostTitle = styled.h1`
   margin-bottom: 0;
   font-size: 1.75rem;
+`
+
+const Tags = styled.ul`
+  display: flex;
+  margin: 10px 0;
+  list-style-type: none;
+`
+
+const TagsItem = styled.li`
+  margin-bottom: 0;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+`
+
+const TagsLink = styled(Link)`
+  display: inline-block;
+  padding: 6px;
+  color: #666;
+  font-size: 0.75rem;
+  text-decoration: none;
+  line-height: 1;
+  background-color: #eee;
+  border-radius: 4px;
+  &:hover {
+    color: #fff;
+    background-color: #26a69a;
+  }
 `
 
 const PostDateList = styled.ul`
@@ -19,8 +50,8 @@ const PostDateList = styled.ul`
   margin-left: 0;
   margin-bottom: 0;
   list-style: none;
-  `
-  
+`
+
 const PostDateItem = styled.li`
   margin-bottom: 5px;
   &:last-child {
@@ -55,9 +86,14 @@ export default function BlogTemplate({
             </PostDateItem>
           </PostDateList>
           <PostTitle>{frontmatter.title}</PostTitle>
-          <PostContent
-            dangerouslySetInnerHTML={{ __html: html }}
-          />
+          <Tags>
+            {frontmatter.tags.map((tag, i) => (
+              <TagsItem key={i}>
+                <TagsLink to={`/tags/${kebabCase(tag)}/`}>{tag}</TagsLink>
+              </TagsItem>
+            ))}
+          </Tags>
+          <PostContent dangerouslySetInnerHTML={{ __html: html }} />
         </article>
       </PostContainer>
     </Layout>
@@ -73,6 +109,7 @@ export const pageQuery = graphql`
         modified(formatString: "更新日：YYYY年MM月DD日")
         path
         title
+        tags
       }
     }
   }
