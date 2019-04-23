@@ -1,6 +1,8 @@
 ---
 path: "/gatsby-prismjs"
+tags: ["GatsbyJS", "PrismJS"]
 date: 2019-04-19
+modified: 2019-04-23
 title: GatsbyにシンタックスハイライターのPrism.jsを導入する
 ---
 
@@ -17,15 +19,15 @@ npm i -S prisms gatsby-remark-prismjs
 ```javascript
 plugins: [
 	{
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-prismjs`,
-          }
-        ]
-      }
+    resolve: `gatsby-transformer-remark`,
+    options: {
+      plugins: [
+        {
+          resolve: `gatsby-remark-prismjs`,
+        }
+      ]
     }
+  }
 ]
 ```
 
