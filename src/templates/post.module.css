@@ -1,0 +1,54 @@
+.postTitle {
+  margin-bottom: 0;
+  font-size: 1.75rem;
+}
+
+.tags {
+  display: flex;
+  margin: 10px 0;
+  list-style-type: none;
+}
+
+.tagsItem {
+  margin-bottom: 0;
+}
+.tagsItem:not(:last-child) {
+  margin-right: 10px;
+}
+
+.tagsLink {
+  display: inline-block;
+  padding: 6px;
+  color: #666;
+  font-size: 0.75rem;
+  text-decoration: none;
+  line-height: 1;
+  background-color: #eee;
+  border-radius: 4px;
+}
+.tagsLink:hover {
+  color: #fff;
+    background-color: #26a69a;
+}
+
+.postDateList {
+  display: flex;
+  margin-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.postDateItem {
+  margin-bottom: 5px;
+}
+.postDateItem:last-child {
+  margin-left: 10px;
+}
+
+.postDate {
+  font-size: 0.75rem;
+}
+
+.postContent {
+  margin-top: 2rem;
+}
