@@ -1,5 +1,6 @@
 ---
 path: "/how-to-prettier-wordpress-with-vscode"
+tags: ["VS Code"]
 date: 2018-11-13
 title: VS Code側でPrettierを使ってWordPressのコーディング規約に沿ってJSとCSSを自動フォーマットする
 ---

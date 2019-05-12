@@ -1,5 +1,6 @@
 ---
 path: "/wordpress-multilingualization-blogname"
+tags: ["WordPress"]
 date: 2018-08-09
 title: WordPressのサイト名やタグラインを多言語化する
 ---

@@ -1,5 +1,6 @@
 ---
 path: "/gatsby-typographyjs"
+tags: ["GatsbyJS"]
 date: 2019-04-07
 title: Gatsbyでフォント関連のスタイルの設定をする
 ---

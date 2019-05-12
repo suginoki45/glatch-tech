@@ -1,5 +1,6 @@
 ---
 path: "/bogo-custom-posts-activate"
+tags: ["WordPress"]
 date: 2018-08-05
 title: カスタム投稿でもbogoを使えるようにする
 ---

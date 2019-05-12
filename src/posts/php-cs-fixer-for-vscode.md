@@ -1,5 +1,6 @@
 ---
 path: "/php-cs-fixer-for-vscode"
+tags: ["VS Code"]
 date: 2018-08-28
 title: Visual Studio CodeでPHPを整形する
 ---

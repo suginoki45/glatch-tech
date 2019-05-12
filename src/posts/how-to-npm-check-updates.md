@@ -1,5 +1,6 @@
 ---
 path: "/how-to-npm-check-updates"
+tags: ["Node.js"]
 date: 2018-11-12
 title: npmのパッケージをアップデートするnpm-check-updatesの使い方
 ---

@@ -1,5 +1,6 @@
 ---
 path: "/how-to-editorconfig"
+tags: ["EditorConfig"]
 date: 2018-11-16
 title: EditorConfigの書き方
 ---

@@ -1,5 +1,6 @@
 ---
 path: "/if-has-post-thumbnail"
+tags: ["WordPress"]
 date: 2018-08-09
 title: WordPressでアイキャッチの有無で条件分岐する
 ---

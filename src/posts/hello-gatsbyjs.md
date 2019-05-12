@@ -1,5 +1,6 @@
 ---
 path: "/hello-gatsbyjs"
+tags: ["GatsbyJS", "Hexo"]
 date: 2019-04-01
 title: HexoからGatsbyに移行した
 ---

@@ -1,5 +1,6 @@
 ---
 path: "/rbenv-for-mac"
+tags: ["Mac", "Ruby"]
 date: 2018-08-22
 modified: 2019-04-17
 title: MacでrbenvをインストールしてRubyを管理する

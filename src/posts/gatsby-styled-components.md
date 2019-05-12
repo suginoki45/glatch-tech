@@ -1,5 +1,6 @@
 ---
 path: "/gatsby-styled-components"
+tags: ["GatsbyJS", "Styled Components"]
 date: 2019-04-11
 title: GatsbyにStyled Componentsを導入する
 ---

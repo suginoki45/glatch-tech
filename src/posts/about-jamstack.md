@@ -1,5 +1,6 @@
 ---
 path: "/about-jamstack"
+tags: ["JAMstack"]
 date: 2019-01-28
 title: JAMstackについてのメモ
 ---

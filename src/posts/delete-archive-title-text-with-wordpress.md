@@ -1,5 +1,6 @@
 ---
 path: "/delete-archive-title-text-with-wordpress"
+tags: ["WordPress"]
 date: 2018-08-09
 title: WordPressで関数で出力したアーカイブタイトルの「アーカイブ：」を消す
 ---

@@ -1,5 +1,6 @@
 ---
 path: "/note-for-mw-wp-form-use"
+tags: ["WordPress", "MW WP Form"]
 date: 2019-04-10
 title: MW WP FORMを使用する時に注意したいこと
 ---

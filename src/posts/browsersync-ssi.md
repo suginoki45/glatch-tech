@@ -1,5 +1,6 @@
 ---
 path: "/browsersync-ssi"
+tags: ["BrowserSync"]
 date: 2019-02-03
 title: BrowsersyncのrewriteRulesを使用してSSI環境を作る
 ---

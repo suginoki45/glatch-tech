@@ -1,5 +1,6 @@
 ---
 path: "/breadcrumb-navxt-categories-hide"
+tags: ["WordPress"]
 date: 2018-08-08
 title: Breadcrumb NavXTで特定のカテゴリを非表示にする
 ---

@@ -1,5 +1,6 @@
 ---
 path: "/node-sass-rebuild"
+tags: ["Node.js", "Gulp"]
 date: 2018-08-09
 title: node.jsのバージョンアップ後にgulp実行時にnode-sassがエラーになる
 ---

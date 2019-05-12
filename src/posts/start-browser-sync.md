@@ -1,5 +1,6 @@
 ---
 path: "/start-browser-sync"
+tags: ["BrowserSync"]
 date: 2019-05-06
 title: Browsersyncの基本的な使い方
 ---

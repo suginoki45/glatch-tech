@@ -1,5 +1,6 @@
 ---
 path: "/ios-submit-enter-blank"
+tags: ["iOS"]
 date: 2018-08-09
 title: iOS Safariでform要素にtarget="_blank”を指定しているとEnterキーによるsubmitが効かない
 ---

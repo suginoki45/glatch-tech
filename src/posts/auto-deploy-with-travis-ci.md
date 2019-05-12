@@ -1,5 +1,6 @@
 ---
 path: "/auto-deploy-with-travis-ci"
+tags: ["Travis CI"]
 date: 2018-10-18
 title: Travis CIでWordPressテーマのテストとデプロイを自動化できるようにする 〜デプロイ編
 ---
