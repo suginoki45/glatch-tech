@@ -1,11 +1,22 @@
 const path = require("path")
 const _ = require("lodash")
+const { paginate } = require("gatsby-awesome-pagination")
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
   const postTemplate = path.resolve(`src/templates/post.js`)
   const tagTemplate = path.resolve(`src/templates/tags.js`)
+
+  const buildPagination = posts => {
+    paginate({
+      createPage,
+      items: posts,
+      itemsPerPage: 10,
+      pathPrefix: ({ pageNumber }) => (pageNumber === 0 ? "/" : "/page"),
+      component: path.resolve('src/templates/index.js')
+    })
+  }
 
   return graphql(`
     {
@@ -29,6 +40,8 @@ exports.createPages = ({ actions, graphql }) => {
     }
 
     const posts = result.data.allMarkdownRemark.edges
+
+    buildPagination(posts)
 
     // Create post detail pages
     posts.forEach(({ node }) => {

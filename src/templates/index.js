@@ -2,14 +2,11 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import PostLinkItem from "../components/post-link-item"
+import Pagination from "../components/Pagination/Pagination"
 import SEO from "../components/seo"
 
-const IndexPage = ({
-  data: {
-    allMarkdownRemark: { edges },
-  },
-}) => {
-  const Posts = edges
+const IndexTemplate = props => {
+  const Posts = props.data.allMarkdownRemark.edges
     .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
     .map(edge => <PostLinkItem key={edge.node.id} post={edge.node} />)
 
@@ -17,19 +14,23 @@ const IndexPage = ({
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
       <div>{Posts}</div>
+      <Pagination props={props} />
     </Layout>
   )
 }
 
-export default IndexPage
+export default IndexTemplate
 
 export const pageQuery = graphql`
-  query {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+  query ($skip: Int!, $limit: Int!) {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      skip: $skip
+      limit: $limit
+    ) {
       edges {
         node {
           id
-          excerpt(pruneLength: 250)
           frontmatter {
             date(formatString: "YYYY年MM月DD日")
             path
