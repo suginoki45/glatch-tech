@@ -16,8 +16,11 @@ const typography = new Typography({
     "sans-serif",
   ],
   overrideStyles: ({ rhythm }) => ({
+    h1: {
+      lineHeight: 1.3,
+    },
     h2: {
-      fontSize: '1.5rem',
+      fontSize: '1.6rem',
       lineHeight: 1.3,
       marginTop: rhythm(2),
       marginBottom: rhythm(1.25)
