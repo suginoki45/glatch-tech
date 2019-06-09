@@ -15,16 +15,20 @@ const typography = new Typography({
     "メイリオ",
     "sans-serif",
   ],
-  overrideStyles: () => ({
+  overrideStyles: ({ rhythm }) => ({
     h2: {
       fontSize: '1.5rem',
       lineHeight: 1.3,
-      marginTop: '3rem',
-      marginBottom: '1.5rem'
+      marginTop: rhythm(2),
+      marginBottom: rhythm(1.25)
     },
     h3: {
-      marginTop: '2.5rem',
-      marginBottom: '1.25rem'
+      marginTop: rhythm(1.75),
+      marginBottom: rhythm(1)
+    },
+    p: {
+      marginTop: rhythm(1),
+      marginBottom: rhythm(1)
     }
   })
 })
