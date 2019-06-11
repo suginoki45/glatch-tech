@@ -17,7 +17,7 @@ export default function BlogTemplate({
   const { frontmatter, html } = markdownRemark
   return (
     <Layout>
-      <SEO title={frontmatter.title} />
+      <SEO title={frontmatter.title} description={frontmatter.description} />
       <div>
         <article>
           <ul className={styles.postDateList}>
@@ -56,6 +56,7 @@ export const pageQuery = graphql`
         path
         title
         tags
+        description
       }
     }
   }
