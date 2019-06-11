@@ -2,7 +2,9 @@
 path: "/gatsby-google-analytics"
 tags: ["GatsbyJS", "Google Analytics"]
 date: 2019-05-12
+modified: 2019-06-11
 title: GatsbyにGoogle Analyticsを導入する
+description: Gatsbyでgatsby-plugin-google-analyticsというプラグインを使用してGoogle Analyticsを導入する方法を紹介しています。
 ---
 
 GatsbyでGoogle Analyticsを導入した。

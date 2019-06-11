@@ -2,7 +2,9 @@
 path: "/about-jamstack"
 tags: ["JAMstack"]
 date: 2019-01-28
+modified: 2019-06-11
 title: JAMstackについてのメモ
+description: JAMstackというサイト制作のアーキテクチャーについて調べたことをメモしています。
 ---
 
 最近よく目にするJAMStackという新しいアーキテクチャーについてのメモ。

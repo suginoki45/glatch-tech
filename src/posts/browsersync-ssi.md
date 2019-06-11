@@ -2,7 +2,9 @@
 path: "/browsersync-ssi"
 tags: ["BrowserSync"]
 date: 2019-02-03
+modified: 2019-06-11
 title: BrowsersyncのrewriteRulesを使用してSSI環境を作る
+description: BrowsersyncのrewriteRulesを使用してSSI環境を作るを紹介しています。
 ---
 
 久しぶりにSSIを使う必要がありBrowsersyncでできるようなのでやり方をメモ。

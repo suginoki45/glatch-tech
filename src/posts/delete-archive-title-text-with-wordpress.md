@@ -2,7 +2,9 @@
 path: "/delete-archive-title-text-with-wordpress"
 tags: ["WordPress"]
 date: 2018-08-09
+modified: 2019-06-11
 title: WordPressで関数で出力したアーカイブタイトルの「アーカイブ：」を消す
+description: WordPressでget_the_archive_title関数を使用すると出力されてしまう「アーカイブ：」の文字列を消す方法を紹介しています。
 ---
 
 WordPress ではアーカイブタイトルを取得する get_the_archive_title()という関数があります。

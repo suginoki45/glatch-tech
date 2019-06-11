@@ -2,7 +2,9 @@
 path: "/auto-test-with-travis-ci"
 tags: ["Travis CI"]
 date: 2018-11-05
+modified: 2019-06-11
 title: Travis CIでWordPressテーマのテストとデプロイを自動化できるようにする 〜テスト編
+description: Travis CIを使用してWordPressテーマをGitHubのmasterブランチへのpushすると、指定したコーディング規約に準拠しているかを確認してくれる方法を紹介しています。
 ---
 
 [前回の記事](/auto-deploy-with-travis-ci/)でTravis CIでWordPressテーマを自動で`release`ブランチにデプロイする方法を書きました。

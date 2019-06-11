@@ -2,7 +2,9 @@
 path: "/breadcrumb-navxt-categories-hide"
 tags: ["WordPress"]
 date: 2018-08-08
+modified: 2019-06-11
 title: Breadcrumb NavXTで特定のカテゴリを非表示にする
+description: WordPressのパンくずを設定できるプラグインであるBreadcrumb NavXTで特定のカテゴリを非表示にする方法を紹介しています。
 ---
 
 WordPress のパンくずリストプラグインである[Breadcrumb NavXT](https://ja.wordpress.org/plugins/breadcrumb-navxt/)で特定のカテゴリを非表示にするカスタマイズの方法です。

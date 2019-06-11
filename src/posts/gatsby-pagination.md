@@ -2,7 +2,9 @@
 path: "/gatsby-pagination"
 tags: ["GatsbyJS"]
 date: 2019-05-15
+modified: 2019-06-11
 title: Gatsbyにページネーションを実装する
+description: Gatsbyでgatsby-awesome-paginationというプラグインを使用してページネーションを実装する方法を紹介しています。
 ---
 
 Gatsbyでページネーションを追加したのでメモ。

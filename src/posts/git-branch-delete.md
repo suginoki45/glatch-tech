@@ -2,7 +2,9 @@
 path: "/git-branch-delete"
 tags: ["git"]
 date: 2019-06-09
+modified: 2019-06-11
 title: Gitで不要になったブランチ（ローカル・リモート共に）を削除する
+description: Gitでローカルブランチ・リモートブランチの削除をする方法を紹介しています。
 ---
 
 ## ローカルブランチの削除
