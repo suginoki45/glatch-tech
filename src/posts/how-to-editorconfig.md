@@ -2,7 +2,9 @@
 path: "/how-to-editorconfig"
 tags: ["EditorConfig"]
 date: 2018-11-16
+modified: 2019-06-12
 title: EditorConfigの書き方
+description: 異なるエディタ・IDE間でもコーディングスタイルの統一ができるEditorConfigの設定方法を紹介しています。
 ---
 
 <a href="https://editorconfig.org/" target="_blank">EditorConfig</a>を導入したので、備忘録的に調べたことをメモしておきます。

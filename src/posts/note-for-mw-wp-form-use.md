@@ -2,7 +2,9 @@
 path: "/note-for-mw-wp-form-use"
 tags: ["WordPress", "MW WP Form"]
 date: 2019-04-10
+modified: 2019-06-12
 title: MW WP FORMを使用する時に注意したいこと
+description: WordPressでお問い合わせフォームが簡単に作ることができるプラグインのMW WP FORMを使用する時に注意したいことを紹介しています。
 ---
 
 ## 完了画面にTOPへ戻るボタンを入れる場合は管理画面から

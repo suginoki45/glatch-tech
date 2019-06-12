@@ -2,8 +2,9 @@
 path: "/gatsby-prismjs"
 tags: ["GatsbyJS", "PrismJS"]
 date: 2019-04-19
-modified: 2019-04-23
+modified: 2019-06-12
 title: GatsbyにシンタックスハイライターのPrism.jsを導入する
+description: Gatsbyでgatsby-remark-prismjsというプラグインを使用してシンタックスハイライターのPrism.jsを導入する方法を紹介しています。
 ---
 
 Gatsbyでソースコードを美しく表示してくれるシンタックスハイライターを導入した。今回は公式ドキュメントでも紹介されているPrismJSを導入した。

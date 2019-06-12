@@ -2,7 +2,9 @@
 path: "/node-sass-rebuild"
 tags: ["Node.js", "Gulp"]
 date: 2018-08-09
+modified: 2019-06-12
 title: node.jsのバージョンアップ後にgulp実行時にnode-sassがエラーになる
+description: node.jsのバージョンアップ後にgulp実行時にnode-sassがエラーになる事象が発生しました。当記事では当該事象の対応方法を紹介しています。
 ---
 
 node.js をバージョンアップ後に gulp を実行したら以下のようなエラーに遭遇しました。

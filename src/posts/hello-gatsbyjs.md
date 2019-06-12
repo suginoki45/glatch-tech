@@ -2,7 +2,9 @@
 path: "/hello-gatsbyjs"
 tags: ["GatsbyJS", "Hexo"]
 date: 2019-04-01
+modified: 2019-06-12
 title: HexoからGatsbyに移行した
+description: React製の静的サイトジェネレーターであるGatsbyに移行した時の手順を紹介しています。
 ---
 
 当ブログはHexo製のブログをNetlifyにホスティングする形で運用していたが、最近Gatsby熱が個人的に高まっており、当ブログもHexoからGatsbyに乗り換えたのでメモ。

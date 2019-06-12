@@ -2,7 +2,9 @@
 path: "/make-develop-wordpress-environment-with-docker-compsoe"
 tags: ["WordPress", "Docker"]
 date: 2018-11-22
+modified: 2019-06-12
 title: Docker ComposeでWordPressの開発環境を作る
+description: Docker ComposeでWordPressの開発環境を作る手順を紹介しています。
 ---
 
 WordPressを開発する時、開発環境を何で作っていますか？

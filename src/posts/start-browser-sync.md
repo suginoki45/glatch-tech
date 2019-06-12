@@ -2,7 +2,9 @@
 path: "/start-browser-sync"
 tags: ["BrowserSync"]
 date: 2019-05-06
+modified: 2019-06-12
 title: Browsersyncの基本的な使い方
+description: Browsersyncの基本的な使い方を紹介しています。
 ---
 
 開発でたいへんお世話になっているBrowsersyncの基本的な使い方をまとめておく。

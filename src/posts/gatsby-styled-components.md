@@ -2,7 +2,9 @@
 path: "/gatsby-styled-components"
 tags: ["GatsbyJS", "Styled Components"]
 date: 2019-04-11
+modified: 2019-06-12
 title: GatsbyにStyled Componentsを導入する
+description: GatsbyでCSS in JSのライブラリの一つであるStyled Componentsを導入する方法を紹介しています。
 ---
 
 CSS in JSを学ぶために数あるライブラリの中からデファクト感があるStyled Componentsを使ってみることにした。

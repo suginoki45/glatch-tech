@@ -2,7 +2,9 @@
 path: "/wordpress-multilingualization-blogname"
 tags: ["WordPress"]
 date: 2018-08-09
+modified: 2019-06-12
 title: WordPressのサイト名やタグラインを多言語化する
+description: WordPressでサイト名やタグラインを多言語化する方法を紹介しています。
 ---
 
 WordPress には多言語化するための便利な関数が装備されています。[\_\_()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/_2)や[\_e()](https://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/_e)がそれです。これらは翻訳されたテキストを取得あるいは表示するための関数です。

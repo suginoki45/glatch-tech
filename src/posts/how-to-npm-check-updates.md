@@ -2,7 +2,9 @@
 path: "/how-to-npm-check-updates"
 tags: ["Node.js"]
 date: 2018-11-12
+modified: 2019-06-12
 title: npmのパッケージをアップデートするnpm-check-updatesの使い方
+description: package.jsonに記載されているnpmのパッケージ更新確認および更新が簡単にできるnpm-check-updatesの使い方を紹介しています。
 ---
 
 npmでインストールしたパッケージをアップデートするにはどうするのか良いかを調べていたところ、便利なパッケージを見つけました。

@@ -2,7 +2,9 @@
 path: "/gatsby-tag"
 tags: ["GatsbyJS"]
 date: 2019-04-23
+modified: 2019-06-12
 title: Gatsbyにタグ機能を実装する
+description: Gatsbyでタグ機能を実装する方法を紹介しています。
 ---
 
 Gatsbyでタグの機能を実装した。タグ機能の実装にあたってはGatsby公式ドキュメントの[Creating Tags Pages for Blog Posts](https://www.gatsbyjs.org/docs/adding-tags-and-categories-to-blog-posts/)を参考にした。

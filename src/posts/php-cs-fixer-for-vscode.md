@@ -2,7 +2,9 @@
 path: "/php-cs-fixer-for-vscode"
 tags: ["VS Code"]
 date: 2018-08-28
+modified: 2019-06-12
 title: Visual Studio CodeでPHPを整形する
+description: Visual Studio CodeでPHP CS Fixerと使用してPHPを整形する方法を紹介しています。
 ---
 
 Visual Studio CodeでPHPの整形をしたかったので、PHP CS Fixerを使ってファイル保存時に整形する方法を解説します。

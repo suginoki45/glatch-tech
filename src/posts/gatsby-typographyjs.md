@@ -2,7 +2,9 @@
 path: "/gatsby-typographyjs"
 tags: ["GatsbyJS"]
 date: 2019-04-07
+modified: 2019-06-12
 title: Gatsbyでフォント関連のスタイルの設定をする
+description: GatsbyでTypography.jsというライブラリを使用して、フォント関連のスタイルを設定する紹介しています。
 ---
 
 Gatsbyでフォント関連の指定を行うには、公式ドキュメントにはTypography.jsというライブラリを使用する方法が紹介されているので、そちらの方法で設定をする。

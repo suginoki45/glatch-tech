@@ -2,7 +2,9 @@
 path: "/how-to-prettier-wordpress-with-vscode"
 tags: ["VS Code"]
 date: 2018-11-13
+modified: 2019-06-12
 title: VS Code側でPrettierを使ってWordPressのコーディング規約に沿ってJSとCSSを自動フォーマットする
+description: Visual Studio CodeでPrettierを使ってをWordPressのコーディング規約に沿ってJSとCSSを自動フォーマットする方法を紹介しています。
 ---
 
 Prettierがとても便利でもはや手放せないツールとなっています。以前に入門記事も書きました。

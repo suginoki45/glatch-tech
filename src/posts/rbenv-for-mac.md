@@ -2,8 +2,9 @@
 path: "/rbenv-for-mac"
 tags: ["Mac", "Ruby"]
 date: 2018-08-22
-modified: 2019-04-17
+modified: 2019-06-12
 title: MacでrbenvをインストールしてRubyを管理する
+description: MacでrbenvをインストールしてRubyを管理する方法を紹介しています。
 ---
 
 複数のバージョンの Ruby を切り替えできたり、プロジェクト毎にバージョン指定できる rbenv を導入したのでメモ。
