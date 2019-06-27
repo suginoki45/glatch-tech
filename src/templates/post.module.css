@@ -3,6 +3,22 @@
   font-size: 1.75rem;
 }
 
+h2 {
+  position: relative;
+  padding-left: 1rem;
+}
+h2::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(0deg, rgb(38, 166, 154) 0%, rgb(38, 166, 154) 50%, rgb(38, 194, 178) 50%, rgb(38, 194, 178) 100%);
+  border-radius: 6px;
+}
+
 .tags {
   display: flex;
   margin: 10px 0;
