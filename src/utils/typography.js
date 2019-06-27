@@ -15,18 +15,30 @@ const typography = new Typography({
     "メイリオ",
     "sans-serif",
   ],
+  headerFontFamily: [
+    "-apple-system",
+    "BlinkMacSystemFont",
+    "Helvetica Neue",
+    "游ゴシック体",
+    "Yugothic",
+    "游ゴシック",
+    "Yu Gothic",
+    "Verdana",
+    "メイリオ",
+    "sans-serif",
+  ],
   overrideStyles: ({ rhythm }) => ({
     h1: {
       lineHeight: 1.3,
     },
     h2: {
-      fontSize: '1.6rem',
+      fontSize: '1.5rem',
       lineHeight: 1.3,
-      marginTop: rhythm(2),
-      marginBottom: rhythm(1.25)
+      marginTop: rhythm(1.75),
+      marginBottom: rhythm(1)
     },
     h3: {
-      marginTop: rhythm(1.75),
+      marginTop: rhythm(1.5),
       marginBottom: rhythm(1)
     },
     p: {
