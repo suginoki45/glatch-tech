@@ -3,7 +3,7 @@ path: "/eslint-stylelint-without-prettier-for-nuxtjs"
 tags: ["ESLint", "Nuxt.js"]
 date: 2019-08-11
 modified: null
-title: PrettierなしでNuxt.jsでのESLintとstylelintの設定をしよう〜ESLint編〜
+title: PrettierなしでNuxt.jsでESLintの設定をする
 description: Prettierを使わずにNuxt.jsでESLintをリアルタイムで実行し、保存時に整形する設定方法を紹介します。
 ---
 
