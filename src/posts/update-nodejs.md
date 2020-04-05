@@ -1,7 +1,7 @@
 ---
 path: "/update-nodejs"
 tags: ["Node.js", "nodebrew"]
-date: 2020-04-09
+date: 2020-04-02
 title: nodebrewで入れたNode.jsとnpmをアップデートする
 description: nodebrewで入れたNode.jsとnpmをアップデートする手順をご紹介します。
 ---
