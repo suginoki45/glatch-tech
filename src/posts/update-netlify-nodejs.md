@@ -1,6 +1,6 @@
 ---
 path: "/update-netlify-nodejs"
-tags: ["Netlify", Node.js"]
+tags: ["Netlify", "Node.js"]
 date: 2020-04-03
 title: Netlifyのデプロイ時にインストールされるNode.jsのバージョンを指定する
 description: Netlifyのデプロイ時にインストールされるNode.jsのバージョンを指定するをご紹介します。
