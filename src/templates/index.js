@@ -1,9 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Layout from "../components/layout"
-import PostLinkItem from "../components/post-link-item"
-import Pagination from "../components/Pagination/Pagination"
-import SEO from "../components/seo"
+import Layout from "../components/Layout"
+import PostLinkItem from "../components/PostLinkItem"
+import Pagination from "../components/Pagination"
+import IndexFooter from "../components/IndexFooter"
+import SEO from "../components/SEO"
 
 const IndexTemplate = props => {
   const Posts = props.data.allMarkdownRemark.edges
@@ -13,8 +14,11 @@ const IndexTemplate = props => {
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-      <div>{Posts}</div>
+      <div>
+        {Posts}
+      </div>
       <Pagination props={props} />
+      <IndexFooter props={props} />
     </Layout>
   )
 }
@@ -32,9 +36,10 @@ export const pageQuery = graphql`
         node {
           id
           frontmatter {
-            date(formatString: "YYYY年MM月DD日")
+            date(formatString: "YYYY/MM/DD")
             path
             title
+            tags
           }
         }
       }

@@ -1,0 +1,32 @@
+body {
+  min-height: calc(100vh - 30px);
+  margin: 4px;
+  padding: 27px;
+  color: #fff;
+  background-color: #181d1d;
+  border: 1px solid #26a69a;
+}
+
+@media (min-width: 46.25em) {
+  body {
+    padding: 59px;
+  }
+}
+@media (min-width: 61.25em) {
+  body {
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid #26a69a;
+  }
+}
+
+.mainContainer {
+  margin-top: 3rem;
+}
+@media (min-width: 61.25em) {
+  .mainContainer {
+    max-width: 720px;
+    margin: 75px auto 0;
+    padding: 0 1.0875rem;
+  }
+}

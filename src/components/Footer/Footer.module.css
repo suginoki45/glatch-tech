@@ -1,0 +1,149 @@
+.footer {
+  margin-top: auto;
+  padding-top: 3rem;
+  letter-spacing: 0;
+}
+@media (min-width: 46.25em) {
+  .footer {
+    padding-top: 4rem;
+  }
+}
+@media (min-width: 61.25em) {
+  .footer {
+    padding: 3rem;
+  }
+}
+@media (min-width: 92em) {
+  .footer {
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 92em) {
+  .footerInner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.footerMeta {
+  margin-bottom: 2rem;
+}
+@media (min-width: 46.25em) {
+  .footerMeta {
+    padding-right: 12.25rem;
+  }
+}
+
+.footerSitename img {
+  width: 60px;
+}
+@media (min-width: 46.25em) {
+  .footerSitename img {
+    width: 78px;
+  }
+}
+
+.footerSitedescription {
+  margin: 0;
+  color: #777;
+  font-size: 0.75rem;
+}
+
+.footerNavs {
+  display: grid;
+  width: 100%;
+  font-size: 0.875rem;
+}
+@media (min-width: 46.25em) {
+  .footerNavs {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: auto;
+  }
+}
+
+.footerNav {
+  margin: 0;
+  list-style-type: none;
+}
+@media (min-width: 46.25em) {
+  .footerNav {
+    margin: 0;
+  }
+}
+.footerNav:nth-child(1) {
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
+}
+.footerNav:nth-child(2) {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+}
+@media (min-width: 46.25em) {
+  .footerNav:nth-child(2) {
+    margin-bottom: 0.5rem;
+  }
+}
+.footerNav:nth-child(3) {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+.footerNav:nth-child(4) {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  margin-top: 1.5rem;
+  font-size: 0.65rem;
+}
+@media (min-width: 46.25em) {
+  .footerNav:nth-child(4) {
+    margin-top: 0;
+    font-size: 0.875rem;
+  }
+}
+
+.footerNavItem {
+  padding: 1rem 0;
+}
+@media (min-width: 46.25em) {
+  .footerNavItem {
+    padding: 0;
+  }
+}
+.footerNavItem::before {
+  padding-right: 0.2rem;
+  color: #ccc;
+  content: "ー";
+}
+@media (min-width: 46.25em) {
+  .footerNavItem::before {
+    display: none;
+  }
+}
+@media (min-width: 46.25em) {
+  .footerNavItem + .footerNavItem {
+    margin-top: 0.5rem;
+  }
+}
+
+.footerNavLink {
+  color: #fff;
+  text-decoration: none;
+}
+.footerNavLink:hover {
+  opacity: 0.8;
+}
+
+.footerCopyright {
+  margin-top: 2rem;
+  font-size: 0.6875rem;
+  text-align: right;
+}
+@media (min-width: 46.25em) {
+  .footerCopyright {
+    margin-top: 3.625rem;
+    font-size: 0.75rem;
+  }
+}

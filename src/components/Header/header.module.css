@@ -1,0 +1,265 @@
+.header {
+  margin-bottom: 40px;
+}
+
+.headerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: padding-top 0.5s, padding-bottom 0.5s;
+}
+
+@media (min-width: 61.25em) {
+  .headerInner {
+    position: relative;
+    margin: 3rem;
+  }
+}
+
+@media (min-width: 92em) {
+  .headerInner {
+    margin: 4rem;
+  }
+}
+
+.siteTitle {
+  position: fixed;
+  top: 32px;
+  left: 32px;
+  z-index: 10000;
+  margin: 0;
+  transition-delay: 0s;
+  transition-timing-function: ease-out;
+  transition-duration: 0.2s;
+  transition-property: transform;
+}
+
+@media (min-width: 46.25em) {
+  .siteTitle {
+    top: 64px;
+    left: 64px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .siteTitle {
+    position: static;
+    display: inline-block;
+  }
+}
+
+.header.is-fixed .siteTitle {
+  transform: translate(-8px, -16px);
+}
+
+@media (min-width: 46.25em) {
+  .header.is-fixed .siteTitle {
+    transform: translate(-12px, -24px);
+  }
+}
+
+.siteLogo {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.siteLogo svg {
+  width: 60px;
+  transition: 0.25s all 0s;
+  fill: #fff;
+}
+
+@media (min-width: 46.25em) {
+  .siteLogo svg {
+    width: 78px;
+  }
+}
+
+.globalNavi {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 80px 28px 28px;
+  letter-spacing: 0;
+  background-color: #181d1d;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.globalNavi.isActive {
+  opacity: 1;
+  pointer-events: all;
+}
+
+@media (min-width: 46.25em) {
+  .globalNavi {
+    padding-top: 120px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .globalNavi {
+    position: static;
+    display: block;
+    padding: 0;
+    overflow: visible;
+    background-color: transparent;
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+.globalNaviInner {
+  margin: 0;
+  list-style-type: none;
+}
+
+@media (min-width: 61.25em) {
+  .globalNaviInner {
+    display: flex;
+  }
+}
+
+.globalNaviItem {
+  margin-bottom: 0;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+@media (min-width: 61.25em) {
+  .globalNaviItem {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 92em) {
+  .globalNaviItem {
+    font-size: 1rem;
+  }
+}
+
+.globalNaviItem + .globalNaviItem {
+  margin-top: 2rem;
+}
+
+@media (min-width: 61.25em) {
+  .globalNaviItem + .globalNaviItem {
+    margin-top: 0;
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: 92em) {
+  .globalNaviItem + .globalNaviItem {
+    margin-left: 48px;
+  }
+}
+
+.globalNaviLink {
+  display: block;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.25s ease-out;
+}
+
+.globalNaviLink.isActive {
+  position: relative;
+  display: block;
+}
+.globalNaviLink.isActive::before {
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #26a69a;
+  border-radius: 9999px;
+  content: "";
+}
+
+.globalNaviLink span {
+  display: block;
+  color: #777;
+  font-size: 0.75rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.toggle {
+  position: fixed;
+  top: 18px;
+  right: 24px;
+  z-index: 10000;
+  display: block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition-delay: 0s;
+  transition-timing-function: ease-out;
+  transition-duration: 0.25s;
+  transition-property: transform;
+}
+.header.isFixed .toggle {
+  transform: translate(8px, -16px);
+}
+
+@media (min-width: 46.25em) {
+  .toggle {
+    top: 50px;
+    right: 56px;
+  }
+}
+
+@media (min-width: 61.25em) {
+  .toggle {
+    display: none;
+  }
+}
+
+.toggleInner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+  padding: 0 0.5rem;
+}
+
+.toggleBar {
+  height: 2px;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 9999px;
+}
+.toggleBar.toggleBar1::before,
+.toggleBar.toggleBar2::before {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #26a69a;
+  transform: translateX(-100%);
+  content: "";
+}
+.toggleBar.toggleBar1 {
+  width: 100%;
+}
+.toggleBar.toggleBar2 {
+  width: 80%;
+  margin-top: 8px;
+}
+.toggleBar.toggleBar1.isActive {
+  transform: matrix(0.7071, 0.7071, -0.7071, 0.7071, 0, 5);
+}
+.toggleBar.toggleBar2.isActive {
+  width: 100%;
+  transform: matrix(0.7071, -0.7071, 0.7071, 0.7071, 0, -5);
+}

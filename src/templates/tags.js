@@ -1,9 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
-
-// Components
 import { Link, graphql } from "gatsby"
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 
 const Tags = ({ pageContext, data }) => {
   const { tag } = pageContext

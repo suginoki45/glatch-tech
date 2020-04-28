@@ -1,0 +1,23 @@
+.pageHeader {
+  margin-top: 120px;
+}
+
+.pageHeading {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.pageHeadingEn {
+    display: block;
+    margin-bottom: 0.75rem;
+    color: #26A69A;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+.pageDescription {
+  color: #ccc;
+  text-align: center;
+}
