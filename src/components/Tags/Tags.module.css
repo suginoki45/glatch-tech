@@ -1,0 +1,32 @@
+.tags {
+  composes: tags from "../../templates/post.module.css";
+  composes: tags from "../PostLinkItem/PostLinkItem.module.css";
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  line-height: 1;
+  list-style-type: none;
+}
+
+.tagsItem {
+  margin-bottom: 0;
+}
+
+.tagsItem:not(:last-child) {
+  margin-right: 10px;
+}
+
+.tagsLink {
+  display: inline-block;
+  padding: 6px;
+  color: #fff;
+  font-size: 0.675rem;
+  line-height: 1;
+  text-decoration: none;
+  background-color: #333;
+}
+
+.tagsLink:hover {
+  color: #fff;
+  background-color: #26a69a;
+}

@@ -3,54 +3,32 @@
   font-size: 1.75rem;
 }
 
-h2 {
+h2:not([class]) {
   position: relative;
   padding-left: 1rem;
 }
-h2::before {
+h2:not([class])::before {
   position: absolute;
   top: 0;
   left: 0;
-  content: "";
   display: block;
   width: 6px;
   height: 100%;
-  background: linear-gradient(0deg, rgb(38, 166, 154) 0%, rgb(38, 166, 154) 50%, rgb(38, 194, 178) 50%, rgb(38, 194, 178) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(38, 166, 154) 0%,
+    rgb(38, 166, 154) 50%,
+    rgb(38, 194, 178) 50%,
+    rgb(38, 194, 178) 100%
+  );
   border-radius: 6px;
-}
-
-.tags {
-  display: flex;
-  margin: 10px 0;
-  list-style-type: none;
-}
-
-.tagsItem {
-  margin-bottom: 0;
-}
-.tagsItem:not(:last-child) {
-  margin-right: 10px;
-}
-
-.tagsLink {
-  display: inline-block;
-  padding: 6px;
-  color: #666;
-  font-size: 0.75rem;
-  text-decoration: none;
-  line-height: 1;
-  background-color: #eee;
-  border-radius: 4px;
-}
-.tagsLink:hover {
-  color: #fff;
-    background-color: #26a69a;
+  content: "";
 }
 
 .postDateList {
   display: flex;
-  margin-left: 0;
   margin-bottom: 0;
+  margin-left: 0;
   list-style: none;
 }
 
@@ -63,6 +41,10 @@ h2::before {
 
 .postDate {
   font-size: 0.75rem;
+}
+
+.post .tags {
+  margin-top: 12px;
 }
 
 .postContent {

@@ -1,12 +1,12 @@
 import Typography from "typography"
 
 const typography = new Typography({
-  baseFontSize: "18px",
+  baseFontSize: "16px",
   baseLineHeight: 1.75,
   bodyFontFamily: [
-    "-apple-system",
-    "BlinkMacSystemFont",
+    "objektiv-mk2",
     "Helvetica Neue",
+    "Noto Sans JP",
     "游ゴシック体",
     "Yugothic",
     "游ゴシック",

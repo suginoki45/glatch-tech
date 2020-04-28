@@ -2,4 +2,9 @@
   display: flex;
   justify-content: space-between;
   margin: 20px 0 0 auto;
+  list-style-type: none;
+}
+
+.paginationNumber {
+  color: #fff;
 }

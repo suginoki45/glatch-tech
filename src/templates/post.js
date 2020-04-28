@@ -1,14 +1,9 @@
 import React from "react"
-
-// Utilities
-import kebabCase from "lodash/kebabCase"
-
-// Components
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import styles from "./post.module.css"
-
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/Layout"
+import SEO from "../components/SEO"
+import Tags from "../components/Tags"
 
 export default function BlogTemplate({
   data, // this prop will be injected by the GraphQL query below.
@@ -19,7 +14,7 @@ export default function BlogTemplate({
     <Layout>
       <SEO title={frontmatter.title} description={frontmatter.description} />
       <div>
-        <article>
+        <article className={styles.post}>
           <ul className={styles.postDateList}>
             <li className={styles.postDateList}>
               <time className={styles.postDate}>{frontmatter.date}</time>
@@ -29,16 +24,7 @@ export default function BlogTemplate({
             </li>
           </ul>
           <h1 className={styles.postTitle}>{frontmatter.title}</h1>
-          {
-            frontmatter.tags &&
-            <ul className={styles.tags}>
-              {frontmatter.tags.map((tag, i) => (
-                <li className={styles.tagsItem} key={i}>
-                  <Link className={styles.tagsLink} to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                </li>
-              ))}
-            </ul>
-          }
+          <Tags tags={frontmatter.tags} />
           <div className={styles.postContent} dangerouslySetInnerHTML={{ __html: html }} />
         </article>
       </div>
