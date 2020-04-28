@@ -5,7 +5,6 @@
   "version": "0.1.0",
   "author": "Glatch <yuki.sugitani@glatchdesign.com>",
   "dependencies": {
-    "classnames": "^2.2.6",
     "eslint-config-gatsby-standard": "^2.2.0",
     "gatsby": "^2.20.25",
     "gatsby-awesome-pagination": "^0.3.5",
