@@ -50,7 +50,7 @@
 }
 
 .blogFooterSearch {
-  margin-top: 1rem;
+  margin-top: 3rem;
 }
 @media (min-width: 61.25em) {
   .blogFooterSearch {
@@ -61,13 +61,12 @@
 }
 
 .adBlogFooter {
-  margin-top: 2rem;
   padding: 8px;
   background-color: #333;
 }
-@media (min-width: 92em) {
+@media (min-width: 61.25em) {
   .adBlogFooter {
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 }
 
