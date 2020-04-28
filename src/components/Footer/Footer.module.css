@@ -67,7 +67,6 @@
 
 .footerNav {
   margin: 0;
-  list-style-type: none;
 }
 @media (min-width: 46.25em) {
   .footerNav {
