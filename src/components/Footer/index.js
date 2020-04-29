@@ -7,7 +7,7 @@ const Footer = () => (
     <div className={styles.footerInner}>
     <div className={styles.footerMeta}>
       <a
-        href="/"
+        href="https://glatchdesign.com/"
         className={styles.footerSitename}>
       <img
           src={logo}
@@ -21,29 +21,29 @@ const Footer = () => (
         <ul className={styles.footerNav}>
         <li className={styles.footerNavItem}>
           <a
-          href="/about"
+          href="https://glatchdesign.com/about/"
           className={styles.footerNavLink}>事業概要</a>
         </li>
         <li className={styles.footerNavItem}>
           <a
-          href="/works"
+          href="https://glatchdesign.com/works/"
           className={styles.footerNavLink}>制作実績</a>
         </li>
         <li className={styles.footerNavItem}>
           <a
-          href="/price"
+          href="https://glatchdesign.com/price/"
           className={styles.footerNavLink}>参考価格</a>
         </li>
         <li className={styles.footerNavItem}>
           <a
-          href="/flow"
+          href="https://glatchdesign.com/flow/"
           className={styles.footerNavLink}>制作の流れ</a>
         </li>
         </ul>
         <ul className={styles.footerNav}>
         <li className={styles.footerNavItem}>
           <a
-          href="/blog"
+          href="https://glatchdesign.com/blog/"
           className={styles.footerNavLink}>ブログ</a>
         </li>
         <li className={styles.footerNavItem}>
@@ -55,19 +55,19 @@ const Footer = () => (
         <ul className={styles.footerNav}>
         <li className={styles.footerNavItem}>
           <a
-          href="/faq"
+          href="https://glatchdesign.com/faq/"
           className={styles.footerNavLink}>よくある質問</a>
         </li>
         <li className={styles.footerNavItem}>
           <a
-          href="/contact"
+          href="https://glatchdesign.com/contact/"
           className={styles.footerNavLink}>お問い合わせ</a>
         </li>
         </ul>
         <ul className={styles.footerNav}>
         <li className={styles.footerNavItem}>
           <a
-          href="/privacy"
+          href="https://glatchdesign.com/privacy/"
           className={styles.footerNavLink}>プライバシーポリシー</a>
         </li>
         </ul>
