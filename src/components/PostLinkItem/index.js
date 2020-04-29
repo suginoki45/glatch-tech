@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import Tag from "../Tags"
+import Tag from "../Tag"
 import styles from "./PostLinkItem.module.css"
 
 const PostLinkItem = ({ post }) => (
