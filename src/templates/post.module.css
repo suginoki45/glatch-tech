@@ -1,6 +1,10 @@
 .postTitle {
   margin-bottom: 0;
-  font-size: 1.75rem;
+}
+@media (min-width: 61.25em) {
+  .postTitle {
+    font-size: 1.875rem;
+  }
 }
 
 h2:not([class]) {
@@ -27,15 +31,15 @@ h2:not([class])::before {
 
 .postDateList {
   display: flex;
-  margin-bottom: 0;
-  margin-left: 0;
-  list-style: none;
+  margin: 2rem 0 0;
+  list-style-type: none;
 }
 
-.postDateItem {
-  margin-bottom: 5px;
+.postDateListItem {
+  margin-bottom: 0;
 }
-.postDateItem:last-child {
+
+.postDateListItem:last-child {
   margin-left: 10px;
 }
 
@@ -44,7 +48,9 @@ h2:not([class])::before {
 }
 
 .post .tags {
-  margin-top: 12px;
+  display: flex;
+  margin: 12px 0 0;
+  list-style-type: none;
 }
 
 .postContent {

@@ -25,6 +25,11 @@
   text-decoration: none;
   background-color: #333;
 }
+@media (min-width: 61.25em) {
+  .tagsLink {
+    font-size: 0.75rem;
+  }
+}
 
 .tagsLink:hover {
   color: #fff;

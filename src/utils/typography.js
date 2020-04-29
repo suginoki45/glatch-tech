@@ -16,8 +16,7 @@ const typography = new Typography({
     "sans-serif",
   ],
   headerFontFamily: [
-    "-apple-system",
-    "BlinkMacSystemFont",
+    "objektiv-mk2",
     "Helvetica Neue",
     "游ゴシック体",
     "Yugothic",
@@ -29,15 +28,17 @@ const typography = new Typography({
   ],
   overrideStyles: ({ rhythm }) => ({
     h1: {
+      fontSize: '1.5rem',
       lineHeight: 1.3,
     },
     h2: {
-      fontSize: '1.5rem',
+      fontSize: '1.375rem',
       lineHeight: 1.3,
       marginTop: rhythm(1.75),
       marginBottom: rhythm(1)
     },
     h3: {
+      fontSize: '1.25rem',
       marginTop: rhythm(1.5),
       marginBottom: rhythm(1)
     },
