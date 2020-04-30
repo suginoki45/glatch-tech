@@ -18,6 +18,7 @@ const typography = new Typography({
   headerFontFamily: [
     "objektiv-mk2",
     "Helvetica Neue",
+    "Noto Sans JP",
     "游ゴシック体",
     "Yugothic",
     "游ゴシック",

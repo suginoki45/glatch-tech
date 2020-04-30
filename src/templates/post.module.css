@@ -1,10 +1,19 @@
 .postTitle {
   margin-bottom: 0;
+  color: #fff;
 }
 @media (min-width: 61.25em) {
   .postTitle {
     font-size: 1.875rem;
   }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #fff;
+  letter-spacing: 0.03em;
 }
 
 h2:not([class]) {

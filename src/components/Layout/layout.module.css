@@ -51,7 +51,7 @@ body {
   min-height: calc(100vh - 30px);
   margin: 4px;
   padding: 27px;
-  color: #fff;
+  color: #ccc;
   background-color: #181d1d;
   border: 1px solid #26a69a;
 }
