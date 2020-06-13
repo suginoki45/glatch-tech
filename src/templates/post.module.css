@@ -65,3 +65,8 @@ h2:not([class])::before {
 .postContent {
   margin-top: 2rem;
 }
+
+th,
+td {
+  border-color: #6b6b6b;
+}

@@ -52,7 +52,7 @@ body {
   margin: 4px;
   padding: 27px;
   color: #ccc;
-  background-color: #181d1d;
+  background-color: #252828;
   border: 1px solid #26a69a;
 }
 
@@ -82,4 +82,9 @@ a {
     margin: 75px auto 0;
     padding: 0 1.0875rem;
   }
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: #393c3c;
 }
