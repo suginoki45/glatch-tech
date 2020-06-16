@@ -27,6 +27,13 @@ module.exports = {
         plugins: [
           {
             resolve: `gatsby-remark-prismjs`,
+            options: {
+              prompt: {
+                user: `root`,
+                host: `localhost`,
+                global: true,
+              },
+            }
           }
         ]
       }
