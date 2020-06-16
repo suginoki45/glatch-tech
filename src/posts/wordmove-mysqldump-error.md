@@ -1,5 +1,5 @@
 ---
-path: "/wordmove-mysqldumo-error"
+path: "/wordmove-mysqldump-error"
 tags: ["Wordmove", "MySQL"]
 date: 2020-06-16
 title: Wordmoveでデータベースを同期する際に発生したエラーとその対処法
