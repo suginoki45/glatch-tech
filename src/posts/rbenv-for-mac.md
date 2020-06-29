@@ -2,7 +2,7 @@
 path: "/rbenv-for-mac"
 tags: ["Mac", "Ruby"]
 date: 2018-08-22
-modified: 2020-06-13
+modified: 2020-06-29
 title: MacでrbenvをインストールしてRubyを管理する
 description: MacでrbenvをインストールしてRubyを管理する方法を紹介しています。
 ---
@@ -43,7 +43,7 @@ rbenv のプラグインで、異なるバージョンの Ruby をコンパイ�
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 ```
 
-書き込みが終わったら動作確認をします。
+書き込みが終わったら以下の2つのコマンドを順に実行し、動作確認をします。
 
 ```shell
 source ~/.bash_profile
@@ -53,7 +53,7 @@ rbenv --version
 ## rbenvでRubyをインストールする
 rbenvのインストールと設定が終わったら、いよいよRubyをインストールします。以下のコマンドでインストール可能なRubyのバージョンが表示されます。
 
-```shell
+```shell{outputLines: 2-9}
 rbenv install -l
 2.5.8
 2.6.6
