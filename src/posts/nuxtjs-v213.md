@@ -2,8 +2,9 @@
 path: "/nuxtjs-v213"
 tags: ["Nuxt.js"]
 date: 2020-08-18
-title: Nuxt.js2.13で追加された注目機能を試してみた
-description: Nuxt.js2.13で追加された注目機能を試してみました。
+modified: 2020-08-25
+title: Nuxt.js2.13のアップデートを確認する
+description: Nuxt.js2.13で個人的に気になるアップデートを確認し、備忘録として記事にしました。
 ---
 
 少々時間が経ってしまいましたが、6/19, 2020にリリースされたNuxt.js 2.13は目玉機能であるFull Static Generation（完全静的モード）を始めとした魅力的な機能が搭載されたので備忘録がてら記事にしておきたいと思います。
