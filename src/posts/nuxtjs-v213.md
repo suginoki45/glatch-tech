@@ -9,7 +9,7 @@ description: Nuxt.js2.13で個人的に気になるアップデートを確認�
 
 少々時間が経ってしまいましたが、6/19, 2020にリリースされたNuxt.js 2.13は目玉機能であるFull Static Generation（完全静的モード）を始めとした魅力的な機能が搭載されたので備忘録がてら記事にしておきたいと思います。
 
-主な追加機能
+## 主な追加機能
 個人的には何と言ってもFull Static Generationですが、その他にも主な機能としては下記のような機能が追加されています。
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Nuxt v2.13 is out ✨<br><br>▵ Full Static Generation<br>▵ Runtime Config<br>▵ Components Discovery<br>▵ Nuxt Telemetry<br>▵ .env support<br>▵ And more 👀<br><br>Read more on <a href="https://t.co/ukNMnI0UMN">https://t.co/ukNMnI0UMN</a><br><br>Thread 👇 <a href="https://t.co/7UhPPf4ynU">pic.twitter.com/7UhPPf4ynU</a></p>&mdash; Nuxt.js (@nuxt_js) <a href="https://twitter.com/nuxt_js/status/1273686140206399488?ref_src=twsrc%5Etfw">June 18, 2020</a></blockquote>
 
