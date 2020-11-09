@@ -2,7 +2,7 @@
 path: "/nuxtjs-v213"
 tags: ["Nuxt.js"]
 date: 2020-08-18
-modified: 2020-08-25
+modified: 2020-11-05
 title: Nuxt.js2.13のアップデートを確認する
 description: Nuxt.js2.13で個人的に気になるアップデートを確認し、備忘録として記事にしました。
 ---
@@ -47,6 +47,13 @@ nuxt build && nuxt export
 
 参考  
 [Going Full Static - NuxtJS](https://nuxtjs.org/blog/going-full-static)
+
+### 生成されたページのローカルでの確認方法が追加された
+生成したページの生成は新たに追加された`nuxt serve`コマンドを実行することで簡単に確認できるようになりました。
+
+```shell
+nuxt serve
+```
 
 ## 動的ルーティングの自動生成
 Full Static Generationの次に個人的に感動したのが動的ルーティングの自動生成です。
