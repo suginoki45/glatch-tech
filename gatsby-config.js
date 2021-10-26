@@ -33,8 +33,14 @@ module.exports = {
                 host: `localhost`,
                 global: true,
               },
-            }
-          }
+            },
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 685,
+            },
+          },
         ]
       }
     },
