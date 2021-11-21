@@ -6,17 +6,15 @@ import Pagination from "../components/Pagination"
 import IndexFooter from "../components/IndexFooter"
 import SEO from "../components/SEO"
 
-const IndexTemplate = props => {
+const IndexTemplate = (props) => {
   const Posts = props.data.allMarkdownRemark.edges
-    .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-    .map(edge => <PostLinkItem key={edge.node.id} post={edge.node} />)
+    .filter((edge) => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
+    .map((edge) => <PostLinkItem key={edge.node.id} post={edge.node} />)
 
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-      <div>
-        {Posts}
-      </div>
+      <div>{Posts}</div>
       <Pagination props={props} />
       <IndexFooter props={props} />
     </Layout>
@@ -26,7 +24,7 @@ const IndexTemplate = props => {
 export default IndexTemplate
 
 export const pageQuery = graphql`
-  query ($skip: Int!, $limit: Int!) {
+  query($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       skip: $skip

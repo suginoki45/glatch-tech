@@ -29,25 +29,25 @@ const typography = new Typography({
   ],
   overrideStyles: ({ rhythm }) => ({
     h1: {
-      fontSize: '1.5rem',
+      fontSize: "1.5rem",
       lineHeight: 1.3,
     },
     h2: {
-      fontSize: '1.375rem',
+      fontSize: "1.375rem",
       lineHeight: 1.3,
       marginTop: rhythm(1.75),
-      marginBottom: rhythm(1)
+      marginBottom: rhythm(1),
     },
     h3: {
-      fontSize: '1.25rem',
+      fontSize: "1.25rem",
       marginTop: rhythm(1.5),
-      marginBottom: rhythm(1)
+      marginBottom: rhythm(1),
     },
     p: {
       marginTop: rhythm(1),
-      marginBottom: rhythm(1)
-    }
-  })
+      marginBottom: rhythm(1),
+    },
+  }),
 })
 
 export default typography

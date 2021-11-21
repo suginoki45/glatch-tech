@@ -29,7 +29,10 @@ export default function BlogTemplate({
               <Tag key={i} tag={tag} />
             ))}
           </ul>
-          <div className={styles.postContent} dangerouslySetInnerHTML={{ __html: html }} />
+          <div
+            className={styles.postContent}
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
         </article>
       </div>
     </Layout>
