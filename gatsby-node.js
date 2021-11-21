@@ -5,9 +5,8 @@ const { paginate } = require("gatsby-awesome-pagination")
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
 
-  const postTemplate = path.resolve(`src/templates/post.js`)
   const tagTemplate = path.resolve(`src/templates/tags.js`)
-
+  
   const buildPagination = posts => {
     paginate({
       createPage,
@@ -42,15 +41,6 @@ exports.createPages = ({ actions, graphql }) => {
     const posts = result.data.allMarkdownRemark.edges
 
     buildPagination(posts)
-
-    // Create post detail pages
-    posts.forEach(({ node }) => {
-      createPage({
-        path: node.frontmatter.path,
-        component: postTemplate,
-        context: {}, // additional data can be passed via context
-      })
-    })
 
     // Tag pages:
     let tags = []

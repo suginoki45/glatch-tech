@@ -1,5 +1,5 @@
 .tags {
-  composes: tags from "../../templates/post.module.css";
+  composes: tags from "../../pages/post.module.css";
   composes: tags from "../PostLinkItem/PostLinkItem.module.css";
   display: flex;
   flex-wrap: wrap;
