@@ -1,0 +1,13 @@
+.gatsby-highlight-code-line {
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+  background-color: rgb(92, 92, 92);
+  border-left: 0.25em solid #26a69a;
+}
+
+a.anchor {
+  fill: white;
+}

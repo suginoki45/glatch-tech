@@ -4,6 +4,7 @@ import styles from "./post.module.css"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import Tag from "../components/Tag"
+import TOC from "../components/TOC"
 
 const BlogPostTemplate = ({ params, data }) => {
   return (
@@ -13,13 +14,19 @@ const BlogPostTemplate = ({ params, data }) => {
         description={data.markdownRemark.frontmatter.description}
       />
       <article className={styles.post}>
-        <h1 className={styles.postTitle}>{data.markdownRemark.frontmatter.title}</h1>
+        <h1 className={styles.postTitle}>
+          {data.markdownRemark.frontmatter.title}
+        </h1>
         <ul className={styles.postDateList}>
           <li className={styles.postDateListItem}>
-            <time className={styles.postDate}>{data.markdownRemark.frontmatter.date}</time>
+            <time className={styles.postDate}>
+              {data.markdownRemark.frontmatter.date}
+            </time>
           </li>
           <li className={styles.postDateListItem}>
-            <time className={styles.postDate}>{data.markdownRemark.frontmatter.modified}</time>
+            <time className={styles.postDate}>
+              {data.markdownRemark.frontmatter.modified}
+            </time>
           </li>
         </ul>
         <ul className={styles.tags}>
@@ -27,6 +34,7 @@ const BlogPostTemplate = ({ params, data }) => {
             <Tag key={i} tag={tag} />
           ))}
         </ul>
+        <TOC html={data.markdownRemark.tableOfContents} />
         <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
       </article>
     </Layout>
@@ -40,6 +48,9 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       id
       html
+      tableOfContents(
+        absolute: false
+      )
       frontmatter {
         title
         description
