@@ -8,6 +8,7 @@
     "eslint-config-gatsby-standard": "^2.2.0",
     "gatsby": "^2.27.0",
     "gatsby-awesome-pagination": "^0.3.6",
+    "gatsby-plugin-canonical-urls": "^4.3.0",
     "gatsby-plugin-google-analytics": "^2.3.4",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^0.3.0",

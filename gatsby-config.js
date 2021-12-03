@@ -67,6 +67,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://tech.glatchdesign.com`,
+        stripQueryString: true,
+      },
+    },
+    {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `${__dirname}/src/utils/typography`,
