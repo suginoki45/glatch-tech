@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: `https://tech.glatchdesign.com`,
     title: `Glatch Tech`,
     description: `Web制作ユニットGlatchのテックブログです。`,
     author: `Glatch`,
@@ -7,6 +8,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
