@@ -82,12 +82,12 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingId: "UA-63813375-1",
-        head: false,
-        anonymize: true,
-        respectDNT: true,
+        trackingIds: ['G-VLXWSKZKJB'],
+        pluginConfig: {
+          head: true,
+        },
       },
     },
     {
