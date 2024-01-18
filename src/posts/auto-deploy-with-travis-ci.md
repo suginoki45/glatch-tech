@@ -206,6 +206,3 @@ git push --force --quiet "https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git
 [いい加減覚えよう。command &gt; /dev/null 2&gt;&amp;1の意味 - Qiita](https://qiita.com/ritukiii/items/b3d91e97b71ecd41d4ea)
 
 以上で設定は完了です。これで`master`ブランチにプッシュするとビルドされて`release`ブランチにプッシュまでの作業を自動化できるようになります。
-
-参考：
-[WordPressのテーマをTravis CIでビルドする。 | Firegoby](https://firegoby.jp/archives/6396)
